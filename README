@@ -1,0 +1,70 @@
+xfce4-dev-tools
+------------------------------------------
+The Xfce development tools are a collection of tools and macros for
+Xfce developers and people that want to build Xfce from SVN. In addition
+it contains the Xfce developer's handbook.
+
+Runtime requirements:
+  autoconf2.5
+  automake1.10
+  glib2-devel
+  gtk-doc
+  intltool
+  libtool1.5
+
+Build requirements:
+  cygwin-1.5.24-2
+  coreutils-6.7-2
+  cygport-0.3.1-1
+  gawk-3.1.5-4
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.xfce.org/
+
+Canonical download:
+  http://www.xfce.org/archive/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xfce4-dev-tools-4.4.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xfce4-dev-tools-4.4.0-X.cygport all
+
+This will create:
+  /usr/src/xfce4-dev-tools-4.4.0-X-src.tar.bz2
+  /usr/src/xfce4-dev-tools-4.4.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/xdt-autogen
+  /usr/share/doc/Cygwin/xfce4-dev-tools-4.4.0.README
+  /usr/share/doc/xfce4-dev-tools-4.4.0/AUTHORS
+  /usr/share/doc/xfce4-dev-tools-4.4.0/COPYING
+  /usr/share/doc/xfce4-dev-tools-4.4.0/ChangeLog
+  /usr/share/doc/xfce4-dev-tools-4.4.0/HACKING
+  /usr/share/doc/xfce4-dev-tools-4.4.0/INSTALL
+  /usr/share/doc/xfce4-dev-tools-4.4.0/NEWS
+  /usr/share/doc/xfce4-dev-tools-4.4.0/README
+  /usr/share/xfce4/dev-tools/m4macros/xdt-depends.m4
+  /usr/share/xfce4/dev-tools/m4macros/xdt-features.m4
+  /usr/share/xfce4/dev-tools/m4macros/xdt-i18n.m4
+  /usr/share/xfce4/dev-tools/m4macros/xdt-python.m4
+  /usr/share/xfce4/dev-tools/m4macros/xdt-xfce.m4
+
+------------------
+
+Port Notes:
+
+----- version 4.4.0-1 -----
+Initial release of Xfce 4.4 for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

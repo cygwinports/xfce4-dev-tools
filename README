@@ -10,13 +10,12 @@ Runtime requirements:
   glib2-devel
   gtk-doc
   intltool
-  libtool1.5
+  libtool
 
 Build requirements:
-  cygwin-1.5.24-2
-  coreutils-6.7-2
-  cygport-0.3.1-1
-  gawk-3.1.5-4
+  cygwin-1.5.25-15
+  cygport-0.4.2-1
+  gawk-3.1.6-1
   make-3.81-1
   sed-4.1.5-2
 
@@ -29,29 +28,29 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-dev-tools-4.4.0-X-src.tar.bz2
+  unpack xfce4-dev-tools-4.5.91-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-dev-tools-4.4.0-X.cygport all
+  cygport ./xfce4-dev-tools-4.5.91-X.cygport all
 
 This will create:
-  /usr/src/xfce4-dev-tools-4.4.0-X-src.tar.bz2
-  /usr/src/xfce4-dev-tools-4.4.0-X.tar.bz2
+  /usr/src/xfce4-dev-tools-4.5.91-X-src.tar.bz2
+  /usr/src/xfce4-dev-tools-4.5.91-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/xdt-autogen
-  /usr/share/doc/Cygwin/xfce4-dev-tools-4.4.0.README
-  /usr/share/doc/xfce4-dev-tools-4.4.0/AUTHORS
-  /usr/share/doc/xfce4-dev-tools-4.4.0/COPYING
-  /usr/share/doc/xfce4-dev-tools-4.4.0/ChangeLog
-  /usr/share/doc/xfce4-dev-tools-4.4.0/HACKING
-  /usr/share/doc/xfce4-dev-tools-4.4.0/INSTALL
-  /usr/share/doc/xfce4-dev-tools-4.4.0/NEWS
-  /usr/share/doc/xfce4-dev-tools-4.4.0/README
+  /usr/bin/xdt-commit
+  /usr/share/doc/xfce4-dev-tools-4.5.91/AUTHORS
+  /usr/share/doc/xfce4-dev-tools-4.5.91/COPYING
+  /usr/share/doc/xfce4-dev-tools-4.5.91/ChangeLog
+  /usr/share/doc/xfce4-dev-tools-4.5.91/HACKING
+  /usr/share/doc/xfce4-dev-tools-4.5.91/INSTALL
+  /usr/share/doc/xfce4-dev-tools-4.5.91/NEWS
+  /usr/share/doc/xfce4-dev-tools-4.5.91/README
   /usr/share/xfce4/dev-tools/m4macros/xdt-depends.m4
   /usr/share/xfce4/dev-tools/m4macros/xdt-features.m4
   /usr/share/xfce4/dev-tools/m4macros/xdt-i18n.m4
@@ -61,6 +60,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 4.5.91-1 -----
+Version bump for 4.6-beta1.
 
 ----- version 4.4.0-1 -----
 Initial release of Xfce 4.4 for Cygwin.

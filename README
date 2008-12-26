@@ -14,7 +14,7 @@ Runtime requirements:
 
 Build requirements:
   cygwin-1.5.25-15
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   make-3.81-1
   sed-4.1.5-2
@@ -28,15 +28,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-dev-tools-4.5.91-X-src.tar.bz2
+  unpack xfce4-dev-tools-4.5.92-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-dev-tools-4.5.91-X.cygport all
+  cygport ./xfce4-dev-tools-4.5.92-X.cygport all
 
 This will create:
-  /usr/src/xfce4-dev-tools-4.5.91-X-src.tar.bz2
-  /usr/src/xfce4-dev-tools-4.5.91-X.tar.bz2
+  /usr/src/xfce4-dev-tools-4.5.92-X-src.tar.bz2
+  /usr/src/xfce4-dev-tools-4.5.92-X.tar.bz2
 
 -------------------------------------------
 
@@ -44,13 +44,13 @@ Files included in the binary package:
 
   /usr/bin/xdt-autogen
   /usr/bin/xdt-commit
-  /usr/share/doc/xfce4-dev-tools-4.5.91/AUTHORS
-  /usr/share/doc/xfce4-dev-tools-4.5.91/COPYING
-  /usr/share/doc/xfce4-dev-tools-4.5.91/ChangeLog
-  /usr/share/doc/xfce4-dev-tools-4.5.91/HACKING
-  /usr/share/doc/xfce4-dev-tools-4.5.91/INSTALL
-  /usr/share/doc/xfce4-dev-tools-4.5.91/NEWS
-  /usr/share/doc/xfce4-dev-tools-4.5.91/README
+  /usr/share/doc/xfce4-dev-tools-4.5.92/AUTHORS
+  /usr/share/doc/xfce4-dev-tools-4.5.92/COPYING
+  /usr/share/doc/xfce4-dev-tools-4.5.92/ChangeLog
+  /usr/share/doc/xfce4-dev-tools-4.5.92/HACKING
+  /usr/share/doc/xfce4-dev-tools-4.5.92/INSTALL
+  /usr/share/doc/xfce4-dev-tools-4.5.92/NEWS
+  /usr/share/doc/xfce4-dev-tools-4.5.92/README
   /usr/share/xfce4/dev-tools/m4macros/xdt-depends.m4
   /usr/share/xfce4/dev-tools/m4macros/xdt-features.m4
   /usr/share/xfce4/dev-tools/m4macros/xdt-i18n.m4
@@ -60,6 +60,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 4.5.92-1 -----
+Version bump for 4.6-beta2.
 
 ----- version 4.5.91-1 -----
 Version bump for 4.6-beta1.

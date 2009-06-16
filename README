@@ -7,16 +7,16 @@ it contains the Xfce developer's handbook.
 Runtime requirements:
   autoconf2.5
   automake1.10
-  glib2-devel
   gtk-doc
   intltool
+  libglib2.0-devel
   libtool
 
 Build requirements:
-  cygwin-1.5.25-15
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  make-3.81-1
+  cygwin-1.7.0-49
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -44,13 +44,13 @@ Files included in the binary package:
 
   /usr/bin/xdt-autogen
   /usr/bin/xdt-commit
-  /usr/share/doc/xfce4-dev-tools-4.6.0/AUTHORS
-  /usr/share/doc/xfce4-dev-tools-4.6.0/COPYING
-  /usr/share/doc/xfce4-dev-tools-4.6.0/ChangeLog
-  /usr/share/doc/xfce4-dev-tools-4.6.0/HACKING
-  /usr/share/doc/xfce4-dev-tools-4.6.0/INSTALL
-  /usr/share/doc/xfce4-dev-tools-4.6.0/NEWS
-  /usr/share/doc/xfce4-dev-tools-4.6.0/README
+  /usr/share/doc/xfce4-dev-tools/AUTHORS
+  /usr/share/doc/xfce4-dev-tools/COPYING
+  /usr/share/doc/xfce4-dev-tools/ChangeLog
+  /usr/share/doc/xfce4-dev-tools/HACKING
+  /usr/share/doc/xfce4-dev-tools/INSTALL
+  /usr/share/doc/xfce4-dev-tools/NEWS
+  /usr/share/doc/xfce4-dev-tools/README
   /usr/share/xfce4/dev-tools/m4macros/xdt-depends.m4
   /usr/share/xfce4/dev-tools/m4macros/xdt-features.m4
   /usr/share/xfce4/dev-tools/m4macros/xdt-i18n.m4
@@ -61,20 +61,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 4.6.0-1 -----
-Version bump.
-
------ version 4.5.99.1-1 -----
-Version bump for 4.6-rc1.
-
------ version 4.5.92-1 -----
-Version bump for 4.6-beta2.
-
------ version 4.5.91-1 -----
-Version bump for 4.6-beta1.
-
------ version 4.4.0-1 -----
-Initial release of Xfce 4.4 for Cygwin.
+----- version 4.6.0-10 -----
+Initial release of Xfce 4.6 for Cygwin 1.7.
 
 
 Cygwin port maintained by:

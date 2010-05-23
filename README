@@ -7,15 +7,18 @@ it contains the Xfce developer's handbook.
 Runtime requirements:
   autoconf2.5
   automake1.10
+  gawk
+  grep
   gtk-doc
   intltool
   libglib2.0-devel
   libtool
+  sed
 
 Build requirements:
-  cygwin-1.7.0-49
-  cygport-0.9.6-1
-  gawk-3.1.6-2
+  cygwin-1.7.5-1
+  cygport-0.9.84-1
+  gawk-3.1.7-1
   make-3.81-2
   sed-4.1.5-2
 
@@ -28,38 +31,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-dev-tools-4.6.0-X-src.tar.bz2
+  unpack xfce4-dev-tools-4.7.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-dev-tools-4.6.0-X.cygport all
+  cygport ./xfce4-dev-tools-4.7.2-X.cygport all
 
 This will create:
-  /usr/src/xfce4-dev-tools-4.6.0-X-src.tar.bz2
-  /usr/src/xfce4-dev-tools-4.6.0-X.tar.bz2
+  /usr/src/xfce4-dev-tools-4.7.2-X-src.tar.bz2
+  /usr/src/xfce4-dev-tools-4.7.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/xdt-autogen
-  /usr/bin/xdt-commit
-  /usr/share/doc/xfce4-dev-tools/AUTHORS
-  /usr/share/doc/xfce4-dev-tools/COPYING
-  /usr/share/doc/xfce4-dev-tools/ChangeLog
-  /usr/share/doc/xfce4-dev-tools/HACKING
-  /usr/share/doc/xfce4-dev-tools/INSTALL
-  /usr/share/doc/xfce4-dev-tools/NEWS
-  /usr/share/doc/xfce4-dev-tools/README
-  /usr/share/xfce4/dev-tools/m4macros/xdt-depends.m4
-  /usr/share/xfce4/dev-tools/m4macros/xdt-features.m4
-  /usr/share/xfce4/dev-tools/m4macros/xdt-i18n.m4
-  /usr/share/xfce4/dev-tools/m4macros/xdt-python.m4
-  /usr/share/xfce4/dev-tools/m4macros/xdt-xfce.m4
-
-------------------
-
 Port Notes:
+
+----- version 4.7.2-1 -----
+Version bump for Xfce 4.7.
 
 ----- version 4.6.0-10 -----
 Initial release of Xfce 4.6 for Cygwin 1.7.

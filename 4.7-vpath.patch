@@ -1,0 +1,11 @@
+--- origsrc/xfce4-dev-tools-4.7.2/scripts/Makefile.am	2009-08-18 21:11:21.000000000 -0500
++++ src/xfce4-dev-tools-4.7.2/scripts/Makefile.am	2010-05-23 01:20:45.369615900 -0500
+@@ -10,7 +10,7 @@ bin_SCRIPTS =								\
+ 	xdt-autogen							\
+ 	xdt-commit							
+ 
+-xdt-autogen: Makefile $(srcdir)/xdt-autogen.in
++xdt-autogen: Makefile xdt-autogen.in
+ 	rm -f xdt-autogen xdt-autogen.gen
+ 	sed -e 's,\@DATADIR\@,$(datadir),g' \
+ 		xdt-autogen.in \

@@ -1,5 +1,5 @@
 category: Xfce
-requires: autoconf2.5 automake1.10 gtk-doc intltool libglib2.0-devel libtool
+requires: autoconf2.5 automake1.10 gawk grep gtk-doc intltool libglib2.0-devel libtool sed
 sdesc: "Xfce development tools"
 ldesc: "The Xfce development tools are a collection of tools and macros 
 for Xfce developers and people that want to build Xfce from SVN. In 

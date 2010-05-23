@@ -1,0 +1,6 @@
+inherit xfce4
+
+DESCRIPTION="Xfce development tools"
+
+PATCH_URI="4.4-python-libs.patch
+           4.7-vpath.patch"

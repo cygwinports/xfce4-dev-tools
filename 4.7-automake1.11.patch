@@ -1,0 +1,20 @@
+--- origsrc/xfce4-dev-tools-4.7.2/scripts/xdt-autogen.in.in	2009-08-26 17:01:34.000000000 -0500
++++ src/xfce4-dev-tools-4.7.2/scripts/xdt-autogen.in.in	2010-05-24 23:56:50.714244700 -0500
+@@ -429,7 +429,7 @@ done
+ ## simply aclocal.
+ ##
+ test -z "${XDT_PROG_ACLOCAL}" &&
+-for i in aclocal-1.10 aclocal-1.9 aclocal-1.8 aclocal; do
++for i in aclocal-1.11 aclocal-1.10 aclocal-1.9 aclocal-1.8 aclocal; do
+   (${i} --version) </dev/null >/dev/null 2>&1 &&
+   XDT_PROG_ACLOCAL=${i} && break
+ done
+@@ -473,7 +473,7 @@ done
+ ## simply automake.
+ ##
+ test -z "${XDT_PROG_AUTOMAKE}" &&
+-for i in automake-1.10 automake-1.9 automake-1.8 automake; do
++for i in automake-1.11 automake-1.10 automake-1.9 automake-1.8 automake; do
+   (${i} --version) </dev/null >/dev/null 2>&1 &&
+   XDT_PROG_AUTOMAKE=${i} && break
+ done

@@ -1,8 +1,19 @@
---- origsrc/xfce4-dev-tools-4.7.2/scripts/Makefile.am	2009-08-18 21:11:21.000000000 -0500
-+++ src/xfce4-dev-tools-4.7.2/scripts/Makefile.am	2010-05-23 01:20:45.369615900 -0500
+--- origsrc/xfce4-dev-tools-4.8.0/scripts/Makefile.am	2011-01-18 17:47:18.136781200 -0600
++++ src/xfce4-dev-tools-4.8.0/scripts/Makefile.am	2011-01-18 17:46:07.000000000 -0600
 @@ -10,7 +10,7 @@ bin_SCRIPTS =								\
  	xdt-autogen							\
  	xdt-commit							
+ 
+-xdt-autogen: Makefile $(srcdir)/xdt-autogen.in
++xdt-autogen: Makefile xdt-autogen.in
+ 	rm -f xdt-autogen xdt-autogen.gen
+ 	sed -e 's,\@DATADIR\@,$(datadir),g' \
+ 		xdt-autogen.in \
+--- origsrc/xfce4-dev-tools-4.8.0/scripts/Makefile.in	2011-01-16 08:12:32.000000000 -0600
++++ src/xfce4-dev-tools-4.8.0/scripts/Makefile.in	2011-01-18 17:46:44.471922500 -0600
+@@ -387,7 +387,7 @@ uninstall-am: uninstall-binSCRIPTS
+ 	pdf-am ps ps-am uninstall uninstall-am uninstall-binSCRIPTS
+ 
  
 -xdt-autogen: Makefile $(srcdir)/xdt-autogen.in
 +xdt-autogen: Makefile xdt-autogen.in

@@ -1,0 +1,24 @@
+GIT_REV=${PV[4]}
+inherit xfce4 git
+
+DESCRIPTION="Xfce development tools"
+
+PATCH_URI="
+	4.4-python-libs.patch
+	4.7-vpath.patch
+"
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	if inherited git
+	then
+		sed -e "s/\@REVISION\@/${GIT_REV:0:7}/g" < configure.in.in > configure.in
+	fi
+}
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	xfce4_compile
+}

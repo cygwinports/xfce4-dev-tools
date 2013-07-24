@@ -1,0 +1,24 @@
+inherit xfce4
+
+NAME="xfce4-dev-tools"
+VERSION=4.10.0
+RELEASE=1
+CATEGORY="Xfce"
+SUMMARY="Xfce development tools"
+DESCRIPTION="The Xfce development tools are a collection of tools and macros
+for Xfce developers and people that want to build Xfce from Git. In addition,
+it contains the Xfce developer's handbook."
+
+PATCH_URI="
+	4.4-python-libs.patch
+	4.7-vpath.patch
+"
+
+xfce4_dev_tools_REQUIRES="autoconf2.5 automake1.11 gawk grep gtk-doc intltool libglib2.0-devel libtool sed"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	xfce4_compile
+}

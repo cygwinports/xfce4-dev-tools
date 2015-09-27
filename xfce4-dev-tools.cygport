@@ -1,7 +1,7 @@
 inherit xfce4
 
 NAME="xfce4-dev-tools"
-VERSION=4.10.0
+VERSION=4.12.0
 RELEASE=1
 CATEGORY="Xfce"
 SUMMARY="Xfce development tools"
@@ -11,7 +11,6 @@ it contains the Xfce developer's handbook."
 
 PATCH_URI="
 	4.4-python-libs.patch
-	4.7-vpath.patch
 "
 
 xfce4_dev_tools_REQUIRES="autoconf2.5 automake1.11 gawk grep gtk-doc intltool libglib2.0-devel libtool sed"
